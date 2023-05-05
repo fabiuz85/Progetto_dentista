@@ -1,0 +1,30 @@
+:root{
+    --primary:rgb(65,174,223);
+    --secondary:rgb(188,188,188);
+    --accent:rgb(235,235,235);
+    /* --whiteC:; */
+    --blackC:rgb(49,49,49);
+}
+body{
+    color: var(--secondary);
+}
+.navColor{
+    color: var(--blackC);
+}
+.navColor:hover{
+    color: var(--primary);
+}
+.appointmentBtn{
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: 0.2s;
+    color: white;
+}
+.appointmentBtn:hover{
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+}
+.appointmentBtn:active{
+    transform: translateY(3px);
+}
