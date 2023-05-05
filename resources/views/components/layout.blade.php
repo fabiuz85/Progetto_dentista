@@ -8,12 +8,17 @@
     <script src="https://kit.fontawesome.com/8237c8f03e.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
     @vite(['resources/js/app.js','resources/css/app.css'])
-    
+
 </head>
 <body>
     <x-navbar/>
-    {{$slot}}
-    {{-- <x-footer/> --}}
+
+
+    {{ $slot }}
+
+
+<x-footer></x-footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+
 </body>
 </html>

@@ -8,6 +8,7 @@
 body{
     color: var(--secondary);
 }
+
 .navColor{
     color: var(--blackC);
 }
@@ -26,5 +27,50 @@ body{
     color: var(--primary);
 }
 .appointmentBtn:active{
+    transform: translateY(3px);
+}
+.imgHeader{
+    min-height: 40vh;
+    width: 100%;
+    padding-top: 300px;
+    background: url(/public/media/mt-ti-white.png), url(/public/media/solid-color-image.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pChiSiamo{
+    width:100px;
+    height:100px ;
+    float:left;
+    border: 20px solid var(--primary);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+}
+.caselle{
+    color: var(--primary);
+    padding-bottom: 20px;
+
+}
+.bottoneCaselle{
+   border: 2px solid var(--primary);
+   background-color: var(--primary);
+   color: white;
+   transition: 0.2s;
+   -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+   -ms-transition: 0.2s;
+   -o-transition: 0.2s;
+}
+.bottoneCaselle:hover{
+border: 2px solid var(--primary);
+background-color: white;
+color: var(--primary);
+
+}
+.bottoneCaselle:active{
     transform: translateY(3px);
 }
