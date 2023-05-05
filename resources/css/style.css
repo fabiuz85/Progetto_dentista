@@ -9,6 +9,16 @@ body{
     color: var(--secondary);
 }
 
+@media only screen and (min-width: 992px) {
+    .imgNavbar{
+    max-width: 130px;
+}
+}
+@media only screen and (min-width: 1179px) {
+    .imgNavbar{
+    max-width: fit-content;
+}
+}
 .navColor{
     color: var(--blackC);
 }
@@ -37,18 +47,20 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.pChiSiamo{
-    width:100px;
-    height:100px ;
-    float:left;
-    border: 20px solid var(--primary);
+.iconSectionContainer{
+    width: 80px;
+    height: 80px;
+    float:left; 
+}
+.iconCustom{
+    /* border: 2px solid var(--primary); */
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: var(--primary);
-    color: white;
+    background-color: white;
+    color: var(--primary);
 }
 .caselle{
     color: var(--primary);

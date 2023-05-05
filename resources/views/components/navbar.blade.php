@@ -16,10 +16,10 @@
             <i class="fa fa-google-plus fa-xl navColor"></i>
         </a>
     </div>
-    <nav class="navbar navbar-expand-lg bg-light py-0">
+    <nav class="navbar navbar-expand-lg bg-light py-2">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="/media/logo_home.png" alt="logo studio"></a>
+        <a class="navbar-brand" href="#"><img class="img-fluid imgNavbar" src="/media/logo_home.png" alt="logo studio"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           MENU
           <span class="navbar-toggler-icon"></span>
@@ -27,22 +27,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly align-items-center py-5 my-0">
 
-            <li class="nav-item p-3">
+            <li class="nav-item ">
               <a class="nav-link navColor" href="#"><i class="fa-solid fa-user-large"></i> CHI SIAMO</a>
             </li>
-            <li class="nav-item p-3">
+            <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-regular fa-clipboard"></i> SERVIZI</a>
             </li>
-            <li class="nav-item p-3">
+            <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-user-group"></i> STAFF</a>
             </li>
-            <li class="nav-item p-3">
+            <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-rss"></i> NEWS</a>
             </li>
-            <li class="nav-item p-3">
+            <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-handshake-angle"></i> CONVENZIONI</a>
             </li>
-            <li class="nav-item p-3">
+            <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-location-dot"></i> CONTATTI</a>
             </li>
             <li class="nav-item ">
