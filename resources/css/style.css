@@ -8,6 +8,9 @@
 body{
     color: var(--secondary);
 }
+h5, h1{
+    color: var(--blackC);
+}
 
 @media only screen and (min-width: 992px) {
     .imgNavbar{
@@ -50,7 +53,7 @@ body{
 .iconSectionContainer{
     width: 80px;
     height: 80px;
-    float:left; 
+    float:left;
 }
 .iconCustom{
     /* border: 2px solid var(--primary); */
@@ -78,11 +81,26 @@ body{
    -o-transition: 0.2s;
 }
 .bottoneCaselle:hover{
-border: 2px solid var(--primary);
+border: 1px solid var(--primary);
 background-color: white;
 color: var(--primary);
 
 }
 .bottoneCaselle:active{
     transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+}
+.customCard{
+    width: 300px;
+    height: 600px;
+}
+.linkProfiloStaff{
+    font-size: 12px;
+}
+.iconaTaccuino{
+    font-size: 60px;
+    color: var(--primary);
 }
