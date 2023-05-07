@@ -38,14 +38,16 @@
 
 <x-main>
 <div class="container-fluid">
-    <div class="row justify-content-center py-5 mt-5 "></div>
-    <div class="col-12 col-md-4">
-        <div class="iconSectionContainer me-3  text-center">
-            <i class="fa-solid fa-at fa-5x iconaTaccuino"></i>
+    <div class="row justify-content-center py-5 mt-5 ">
+        <div class="col-12 col-md-4">
+            <div class="iconSectionContainer me-3  text-center">
+                <i class="fa-solid fa-at fa-5x iconaTaccuino"></i>
+            </div>
+    
+            <h5 class="text-dark">Servizi e Trattamenti Offerti dal Nostro Studio</h5>
+                <p class="text-dark"> Lo Studio offre ai pazienti un’ampia gamma di prestazioni professionali.</p>
         </div>
 
-        <h5 class="text-dark">Servizi e Trattamenti Offerti dal Nostro Studio</h5>
-            <p class="text-dark"> Lo Studio offre ai pazienti un’ampia gamma di prestazioni professionali.</p>
     </div>
 </div>
 </x-main>

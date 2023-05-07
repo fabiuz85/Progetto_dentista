@@ -5,6 +5,18 @@
     /* --whiteC:; */
     --blackC:rgb(49,49,49);
 }
+.fbColor{
+    background-color: #3b5998;
+}
+.twitterColor{
+    background-color: #55acee;
+}
+.instagramColor{
+    background-color: #ac2bac
+}
+.googleColor{
+    background-color: #dd4b39;
+}
 body{
     color: var(--secondary);
 }
@@ -41,6 +53,13 @@ h5, h1{
 }
 .appointmentBtn:active{
     transform: translateY(3px);
+}
+.navactiveC{
+    transform: scale(1.2);
+    color: var(--primary) !important;
+}
+.navactiveC:hover{
+    color: var(--blackC) !important;
 }
 .imgHeader{
     min-height: 40vh;
@@ -98,9 +117,30 @@ color: var(--primary);
     height: 600px;
 }
 .linkProfiloStaff{
-    font-size: 12px;
+    font-size: 15px;
 }
 .iconaTaccuino{
     font-size: 60px;
     color: var(--primary);
+}
+.cardC{
+    max-width: 300px;
+}
+
+.containerC{
+    background-color: var(--secondary);
+}
+.footerC{
+    background-color: var(--blackC);
+}
+.btnFooter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none !important;
+    color: white;
+}
+.btnFooter:hover{
+    background-color: var(--accent) !important;
+    color: var(--blackC) !important;
 }

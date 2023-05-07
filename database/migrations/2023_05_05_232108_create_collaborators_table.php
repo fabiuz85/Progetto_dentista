@@ -15,8 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
+            $table->string('role');
             $table->integer('age');
-            $table->text('description');
+            $table->longText('description');
+            $table->string('twitter');
+            $table->string('facebook');
+            $table->string('instagram');
+            $table->string('googlePlus');
+            $table->string('portrait');
             $table->timestamps();
         });
     }

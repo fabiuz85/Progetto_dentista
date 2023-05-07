@@ -1,7 +1,7 @@
 
 <div class="fixed-top">
 
-    <div class="d-flex justify-content-end gap-3 w-100 px-4 pt-2 bg-transparent">
+    <div class="d-flex justify-content-end gap-3 w-100 px-4 py-2 bg-transparent">
         <a href="https://twitter.com/dottlucagiachin">
             <i class="fa fa-twitter fa-xl navColor"></i>
         </a>
@@ -11,6 +11,9 @@
             <i class="fa fa-facebook fa-xl navColor"></i>
         </a>
 
+        <a href="https://www.instagram.com/studiodentistico_dott.giachin/">
+          <i class="fa fa-instagram fa-xl navColor"></i>
+      </a>
 
         <a href="http://google.com/+studiodentisticogiachingenova">
             <i class="fa fa-google-plus fa-xl navColor"></i>
@@ -28,13 +31,13 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly align-items-center py-5 my-0">
 
             <li class="nav-item ">
-              <a class="nav-link navColor" href="{{ route('chi-siamo.index') }}"><i class="fa-solid fa-user-large"></i> CHI SIAMO</a>
+              <a class="nav-link navColor" href="#"><i class="fa-solid fa-user-large"></i> CHI SIAMO</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-regular fa-clipboard"></i> SERVIZI</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link navColor" href="#"><i class="fa-solid fa-user-group"></i> STAFF</a>
+                <a class="nav-link @if(Route::currentRouteName()!= 'staff.index') navColor @endif @if(Route::is('staff.index')) active fw-bold navactiveC @endif" href="{{ route('staff.index') }}"><i class="fa-solid fa-user-group"></i> STAFF</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-rss"></i> NEWS</a>

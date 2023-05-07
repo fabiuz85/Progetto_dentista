@@ -11,7 +11,13 @@ class Collaborator extends Model
     protected $fillable = [
         'name',
         'surname',
+        'role',
         'age',
-        'description'
+        'description',
+        'twitter',
+        'facebook',
+        'instagram',
+        'googlePlus',
+        'portrait'
     ];
 }

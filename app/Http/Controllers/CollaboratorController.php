@@ -10,21 +10,22 @@ class CollaboratorController extends Controller
 {
     public function index(Request $request)
    {
-       $collaborators = DB::table('collaborator')->get();
+       $collaborators = DB::table('collaborators')->get();
 
-       return view('/chi-siamo', compact('collaborators'));
+       return view('/staff', compact('collaborators'));
    }
 
 
-   public function details(Request $request, $id)
+   public function details($name, $surname, $id)
    {
        $collaborator = DB::table('collaborators')->where('id', $id)->first();
-       return view('chi-siamo.details', compact('collaborator'));
+       $lines=explode(PHP_EOL, $collaborator->description);
+       return view('profile', compact('collaborator'),['lines'=>$lines, 'name'=>$collaborator->name],);
    }
    public function show()
    {
        $collaborators = Collaborator::all();
-       return view('chi-siamo.show', ['collaborators' => $collaborators]);
+       return view('staff.show', ['collaborators' => $collaborators]);
    }
 
 }
