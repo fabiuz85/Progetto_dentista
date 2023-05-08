@@ -15,7 +15,8 @@ use App\Http\Controllers\CollaboratorController;
 |
 */
 
-Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
+
+Route::get('/', [PublicController::class, 'index'])->name('homepage');
 
 Route::get('/staff', [CollaboratorController::class, 'index'])->name('staff.index');
 
