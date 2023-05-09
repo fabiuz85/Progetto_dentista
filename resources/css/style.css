@@ -119,10 +119,7 @@ color: var(--primary);
 .linkProfiloStaff{
     font-size: 15px;
 }
-.iconaTaccuino{
-    font-size: 60px;
-    color: var(--primary);
-}
+
 .cardC{
     max-width: 300px;
 }
@@ -143,4 +140,9 @@ color: var(--primary);
 .btnFooter:hover{
     background-color: var(--accent) !important;
     color: var(--blackC) !important;
+}
+
+.h4Accordion:hover{
+    color: var(--primary);
+
 }

@@ -8,14 +8,15 @@
     <script src="https://kit.fontawesome.com/8237c8f03e.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
     @vite(['resources/js/app.js','resources/css/app.css'])
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 </head>
 <body>
     <x-navbar/>
 
-    
+
         {{ $slot }}
-   
+
 
 
 <x-footer></x-footer>
