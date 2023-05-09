@@ -1,6 +1,8 @@
 <x-layout>
 
     <x-header />
+
+
     <div class="container-fluid mt-5 pt-5">
         <div class="row justify-content-evenly px-3">
             <div class="col-12 col-lg-4 py-3 px-2">
@@ -40,11 +42,11 @@
         <section class="w-100 bgPrimaryC py-5 my-5 ">
             <div class="container-fluid w-75">
                 <div class="row justify-content-evenly gap-2 ">
-    
+
                     @foreach ($collaborators as $collaborator)
                     <div class="card col-11 col-md-5 col-xxl-2 pb-5 px-0 text-center shadow rounded">
-    
-    
+
+
                         <div class="card-body px-0 pt-0">
                             <img class="img-fluid pt-0 card-img-top"  src="{{$collaborator->portrait}}" alt="immagine collaboratore">
                             <h5 class="card-title pt-3 h3">{{ $collaborator->name }} {{ $collaborator->surname }}</h5>
@@ -52,16 +54,16 @@
                                 <a href="{{$collaborator->twitter}}">
                                     <i class="fa fa-twitter fa-sm navColor"></i>
                                 </a>
-    
-    
+
+
                                 <a href="{{$collaborator->facebook}}">
                                     <i class="fa fa-facebook fa-sm navColor"></i>
                                 </a>
-    
+
                                 <a href="{{$collaborator->instagram}}">
                                     <i class="fa fa-instagram fa-sm navColor"></i>
                                 </a>
-    
+
                                 <a href="{{$collaborator->googlePlus}}">
                                     <i class="fa fa-google-plus fa-sm navColor"></i>
                                 </a>
@@ -137,7 +139,7 @@
 {{-- Script per aprire una tendina accordion per volta, NECESSARIO con jQuery in head --}}
 <script>
      $(document).ready(function() {
-  
+
     $('.accBtn2').on('click', function() {
       $('.accordion-collapse.show').collapse('hide');
       $('.accBtn1').attr('active', 'false');

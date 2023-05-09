@@ -7,7 +7,7 @@ accordions.forEach(function(accordion) {
         button.addEventListener('click', function() {
             let activeButtons = accordion.querySelectorAll('.button.active');
             activeButtons.forEach(activeButton => {
-                
+
                 activeButton.classList.remove('active');
             });
 

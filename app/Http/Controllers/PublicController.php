@@ -19,4 +19,8 @@ class PublicController extends Controller
 
         return view('/welcome', compact('collaborators', 'leftServices', 'rightServices') );
     }
+
+    public function contact_us(){
+        return view('/contact_us');
+    }
 }

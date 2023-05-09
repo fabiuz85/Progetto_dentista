@@ -46,7 +46,7 @@
                 <a class="nav-link navColor" href="#"><i class="fa-solid fa-handshake-angle"></i> CONVENZIONI</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link navColor" href="#"><i class="fa-solid fa-location-dot"></i> CONTATTI</a>
+                <a class="nav-link navColor @if(Route::currentRouteName()!= 'contact_us') navColor @endif @if(Route::is('contact_us')) active fw-bold navactiveC @endif" href="{{ route('contact_us') }}"><i class="fa-solid fa-location-dot"></i> CONTATTI</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link rounded fw-bold shadow p-3 appointmentBtn h-100 w-100" href="#">  <p class="mb-0"><i class="fa-regular fa-calendar-days"></i> APPUNTAMENTI</p> </a>
