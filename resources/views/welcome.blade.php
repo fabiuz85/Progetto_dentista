@@ -100,12 +100,12 @@
             <div class="accordion accordion-flush" id="servizi1">
                  @foreach ($leftServices as $service)
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="{{ $service->name }}">
-                            <button class="accordion-button collapsed accBtn1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $service->name }}" aria-expanded="false" aria-controls="flush-collapse-{{ $service->name }}">
+                        <h2 class="accordion-header" id="{{ $service->id }}">
+                            <button class="accordion-button collapsed accBtn1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $service->id }}" aria-expanded="false" aria-controls="flush-collapse-{{ $service->id }}">
                             <h4 class="h4Accordion">{{ $service->name }}</h4>
                             </button>
                         </h2>
-                        <div id="flush-collapse-{{ $service->name }}" class="accordion-collapse collapse" aria-labelledby="{{ $service->id }}" data-bs-parent="#servizi1">
+                        <div id="flush-collapse-{{ $service->id }}" class="accordion-collapse collapse" aria-labelledby="{{ $service->id }}" data-bs-parent="#servizi1">
                             <div class="accordion-body"><p>{{ $service->shortDescription }}</p></div>
                         </div>
                     </div>
@@ -118,12 +118,12 @@
             <div class="accordion accordion-flush" id="servizi2">
                 @foreach ($rightServices as $service)
                 <div class="accordion-item" >
-                    <h2 class="accordion-header" id="{{ $service->name }}">
-                        <button class="accordion-button collapsed accBtn2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $service->name }}" aria-expanded="false" aria-controls="flush-collapse-{{ $service->name }}">
+                    <h2 class="accordion-header" id="{{ $service->id }}">
+                        <button class="accordion-button collapsed accBtn2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $service->id }}" aria-expanded="false" aria-controls="flush-collapse-{{ $service->id }}">
                         <h4 class="h4Accordion">{{ $service->name }}</h4>
                         </button>
                     </h2>
-                    <div id="flush-collapse-{{ $service->name }}" class="accordion-collapse collapse" aria-labelledby="{{ $service->name }}" data-bs-parent="#servizi2">
+                    <div id="flush-collapse-{{ $service->id }}" class="accordion-collapse collapse" aria-labelledby="{{ $service->id }}" data-bs-parent="#servizi2">
                         <div class="accordion-body"><p>{{ $service->shortDescription }}</p></div>
                     </div>
                 </div>
